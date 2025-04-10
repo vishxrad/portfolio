@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visharad Kashyap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600">Visharad Kashyap</h1>
+        <nav class="space-x-4 hidden md:block">
+          <a href="#about" class="hover:text-indigo-600 font-medium">About</a>
+          <a href="#projects" class="hover:text-indigo-600 font-medium">Projects</a>
+          <a href="#experience" class="hover:text-indigo-600 font-medium">Experience</a>
+          <a href="#contact" class="hover:text-indigo-600 font-medium">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menuToggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-24 px-4 bg-gradient-to-r from-indigo-100 to-blue-100">
+      <h2 class="text-5xl font-extrabold mb-4 text-gray-800">Hi, I'm Visharad</h2>
+      <p class="text-xl mb-6">AI/ML Developer | RAG Specialist | Club Leader</p>
+      <div class="mt-4 flex justify-center space-x-6">
+        <a href="https://github.com/vishxrad" target="_blank" class="text-gray-600 hover:text-indigo-600"><i data-feather="github"></i></a>
+        <a href="https://www.linkedin.com/in/visharad-kashyap" target="_blank" class="text-gray-600 hover:text-indigo-600"><i data-feather="linkedin"></i></a>
+        <a href="mailto:kashyapvisharadyt@gmail.com" class="text-gray-600 hover:text-indigo-600"><i data-feather="mail"></i></a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto py-20 px-6">
+      <h3 class="text-4xl font-bold mb-6 text-center">About Me</h3>
+      <p class="text-lg leading-relaxed text-gray-700 text-center">
+        I'm a Computer Science student at Shoolini University, passionate about building intelligent systems.
+        I specialize in LLMs, RAG pipelines, and have experience in fine-tuning and deploying models using Hugging Face,
+        Intel OneAPI, and other modern frameworks.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-4xl font-bold mb-8 text-center">Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Remedica</h4>
+            <p class="mb-3">A RAG-based health assistant using LLaMA 3.1 and SerpApi for real-time health advice.</p>
+            <a href="https://devpost.com/software/remedica" class="text-indigo-600 font-medium hover:underline">View Project</a>
+          </div>
+          <div class="bg-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">NoBeesWax</h4>
+            <p class="mb-3">A privacy-first fintech app validating coupons with Reddit’s API using LLaMA + Qwen2-VL-72B.</p>
+            <a href="https://devpost.com/software/nobeeswax" class="text-indigo-600 font-medium hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-4xl font-bold mb-8 text-center">Experience & Roles</h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-xl font-semibold">Intern, ZSapiens Softech</h4>
+            <p>Built a Qwen2.5-powered chatbot to handle student call queries.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold">RLHF Practitioner, Outlier.AI</h4>
+            <p>Fine-tuned LLMs for Latinized Hindi and Indian English responses.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold">Intel OneAPI Ambassador</h4>
+            <p>Explored XPU AI optimization and won a hackathon with real-time food supply chain tracker.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-4xl font-bold mb-6">Let's Connect</h3>
+        <p class="text-lg">Email me at <a href="mailto:kashyapvisharadyt@gmail.com" class="text-indigo-600 underline">kashyapvisharadyt@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer class="text-center py-8 text-sm text-gray-500">
+      &copy; 2025 Visharad Kashyap. All rights reserved.
+    </footer>
+
+    <script>
+      feather.replace();
+      document.getElementById('menuToggle').addEventListener('click', () => {
+        const nav = document.querySelector('header nav');
+        nav.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
